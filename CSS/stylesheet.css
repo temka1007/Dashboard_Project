@@ -1,0 +1,40 @@
+* {
+    border: 1px solid red;
+}
+:root {
+
+}
+/* background-layout */
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(200px, 1fr) repeat(4, 1fr);
+    grid-template-rows: 160px repeat(5, 1fr);
+}
+.sidebar {
+    background-color: #fbbf24;
+    grid-area: 1 / 1 / 7 / 2;
+}
+.top-bar {
+    background-color: #fde68a;
+    grid-area: 1 / 2 / 2 / 7;
+}
+main {
+    grid-area: 2 / 2 / 7 / 7;
+}
+
+/* side-bar */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.settings {
+    margin-top: 100px;
+}
