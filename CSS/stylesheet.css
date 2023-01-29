@@ -3,12 +3,6 @@
 :root {
     --main-padding: 20px;
 }
-button {
-    all: unset;
-    border: 1px solid black;
-    height: 10px;
-    width: 10px;
-}
 @font-face {
     font-family: SF Pro;
     src: url(../fonts/sf-pro-text-bold.woff);
@@ -22,7 +16,7 @@ img {
 body {
     display: grid;
     height: 100vh;
-    grid-template-columns: minmax(200px, 1fr) repeat(4, 1fr);
+    grid-template-columns: minmax(280px, 1fr) repeat(4, 1fr);
     grid-template-rows: 160px repeat(5, 1fr);
 }
 .sidebar {
@@ -48,7 +42,6 @@ main {
 }
 .logo-container {
     height: 100px;
-    margin-bottom: 20px;
     display: flex;
 }
 .top-menu {
@@ -87,7 +80,8 @@ main {
 }
 .top-menu div,
 .bottom-menu div {
-    font-family: SF pro;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -98,29 +92,99 @@ main {
     grid-template-rows: 50px 1fr;
     grid-template-columns: 2fr 1fr;
 }
+form {
+    display: flex;
+    align-items: center;
+}
+input {
+    width: 100%;
+    background-color:  rgb(234, 236, 236);
+    padding-left: 18px;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+input:focus {
+    outline: 1px solid #0ea5e9;
+}
+form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+}
 .notification-profile-container {
     display: flex;
+    padding-left: 85px;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: space-around;
+
 }
 .profile-pic-right-top {
-    width: 50px;
+    width: 40px;
+    height: 40px;
+}
+.profile-pic img,
+.profile-pic-right-top img {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 50%;
 }
-.profile {
+.profile-name-right-top {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.notification-icon {
+    margin-right: 30px;
+}
+.notification-icon img{
+    height: 27px;
+}
+.profile {  
     display: flex;
+    align-items: center;
 }
 .new-upload-share-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-form {
-    display: flex;
-}
 .profile-pic {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    margin-right: 10px;
 } 
+.profile-name {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+}
+.profile-name span {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+button {
+    all: unset;
+    padding: 10px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #38bdf8;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
 
 /* main */
 
@@ -150,6 +214,7 @@ main {
 }
 .projects div {
     background-color: white;
+    border-radius: 10px;
 }
 
 /* announcements */
