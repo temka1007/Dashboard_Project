@@ -1,7 +1,9 @@
 * {
+    
 }
 :root {
     --main-padding: 20px;
+    
 }
 @font-face {
     font-family: SF Pro;
@@ -15,7 +17,7 @@ img {
 
 body {
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     grid-template-columns: minmax(280px, 1fr) repeat(4, 1fr);
     grid-template-rows: 160px repeat(5, 1fr);
 }
@@ -141,7 +143,7 @@ form div {
     font-size: 16px;
 }
 .notification-icon {
-    margin-right: 30px;
+    margin-left: 30px;
 }
 .notification-icon img{
     height: 27px;
@@ -201,9 +203,13 @@ main {
     grid-row: span 2;
     display: flex;
     flex-direction: column;
+    
 }
 .projects-container h2 {
-    height: 30px;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
 }
 .projects {
     height: 100%;
@@ -218,24 +224,78 @@ main {
 }
 
 /* announcements */
-
-.announcements-container h2 {
-    height: 30px;
-}
-.announcements {
+.announcements-container {
+    margin-left: 25px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    justify-content: space-around;
+}
+.announcements-container h2 {
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
 
+}
+.announcements {
+    display: grid;
+    padding: 25px;
+    background-color: white;
+    grid-template-rows: 1fr  1fr 1fr ;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+.announcements-title{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.announcement {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgb(90, 90, 90);
 }
 
 /* trending */
-
+.trending-container {
+    margin-top: 25px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+}
 .trending-container h2{
-    height: 30px;
+    height: 40px;
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    
 }
 .trending {
-    display: grid;
+    padding: 25px;
+    background-color: white;
+    grid-template-rows: 1fr  1fr 1fr 1fr;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.trending-profile {
+    display: flex;
+    align-items: center;
 }
-
+.trending-profile div img {
+    height: 45px;
+    width: 45px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.trending-profile p {
+    color: rgb(90, 90, 90);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
