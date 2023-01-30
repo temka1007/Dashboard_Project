@@ -1,5 +1,4 @@
 * {
-    
 }
 :root {
     --main-padding: 20px;
@@ -40,7 +39,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: var(--main-padding);
-    background-color: #38bdf8;
+    background-color: #0ea5e9;
 }
 .logo-container {
     height: 100px;
@@ -65,9 +64,11 @@ main {
 .title {
     font-family: SF Pro;
     padding-top: 5px;
+    color: white;
 }
 .title span {
     font-size: 32px;
+    color: white;
 }
 .sidebar .icon {
     display: flex;
@@ -100,7 +101,7 @@ form {
 }
 input {
     width: 100%;
-    background-color:  rgb(234, 236, 236);
+    background-color: #eaf3f7;
     padding-left: 18px;
     border: none;
     height: 30px;
@@ -181,7 +182,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #38bdf8;
+    background-color: #0ea5e9;
     font-family: 'Noto Sans JP', sans-serif;
     color: white;
     font-size: 13px;
@@ -196,7 +197,8 @@ main {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: rgb(234, 236, 236);
+    background-color: #eaf3f7;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 /* project */
@@ -231,6 +233,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     border-left: 7px solid rgb(255, 221, 51);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    cursor: pointer;
 }
 .icons {
     display: flex;
@@ -266,6 +270,7 @@ main {
     margin-left: 25px;
     display: flex;
     flex-direction: column;
+    
 }
 .announcements-container h2 {
     height: 40px;
@@ -281,6 +286,7 @@ main {
     grid-template-rows: 1fr  1fr 1fr ;
     flex-grow: 1;
     border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .announcements-title{
     font-family: 'Noto Sans JP', sans-serif;
@@ -320,6 +326,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 } 
 .trending-profile {
     display: flex;
