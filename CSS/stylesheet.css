@@ -48,15 +48,19 @@ main {
     display: flex;
 }
 .top-menu {
-    margin-bottom: 20px;
+    height: 300px;
     display: grid;
-    grid-template-columns: 50px auto;
-    grid-template-rows: repeat(6, 50px);
+    margin-bottom: 30px;
+}
+.top-menu > div {
+    display: flex;
 }
 .bottom-menu {
+    height: 150px;
     display: grid;
-    grid-template-columns: 50px auto;
-    grid-template-rows: repeat(3, 50px);
+}
+.bottom-menu > div {
+    display: flex;
 }
 .logo  img{
     --main-size: 60px;
@@ -83,13 +87,30 @@ main {
     align-items: center;
     color: rgb(255, 255, 255);
     font-size: 1.3rem;
+    border-radius: 0px 18px 18px 0px;
+    flex-grow: 1;
+}
+.icon {
+    border-radius: 18px 0px 0px 18px;
+    width: 50px;
 }
 .top-menu div,
 .bottom-menu div {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
 }
-
+.bottom-menu > div:hover > .home,
+.top-menu > div:hover > .home{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.bottom-menu > div:active > .home,
+.top-menu > div:active > .home{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.bottom-menu > div,
+.top-menu > div{
+    cursor: pointer;
+}
 
 /* top-bar */
 
@@ -121,7 +142,16 @@ form div {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
+    width: 46px;
+    height: 42px;
+    border-radius: 23px;
+    margin-left: 12px;
+}
+form div:hover {
+    background-color: rgba(14, 165, 233, 0.15);
+}
+form div:active {
+    background-color: rgba(14, 165, 233, 0.4);
 }
 .notification-profile-container {
     display: flex;
@@ -142,15 +172,28 @@ form div {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
+    cursor: pointer;
 }
 .profile-name-right-top {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
     font-size: 1.3rem;
     margin-left: 10px;
+    cursor: pointer;
 }
 .notification-icon {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+.notification-icon:hover {
+    background-color: rgba(14, 165, 233, 0.15);
+}
+.notification-icon:active {
+    background-color: rgba(14, 165, 233, 0.4);
 }
 .notification-icon img{
     height: 27px;
@@ -196,7 +239,12 @@ button {
     margin-left: 12px;
     cursor: pointer;
 }
-
+button:hover {
+    background-color: rgb(13, 150, 214);
+}
+button:active {
+    background-color: rgb(0, 127, 185);
+}
 
 /* main */
 
@@ -256,6 +304,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.icons div:hover {
+    background-color: rgba(255, 221, 51, 0.3);
+}
+.icons div:active {
+    background-color: rgba(255, 221, 51, 0.6);
 }
 .icons img {
     width: 24px;
@@ -358,4 +412,4 @@ a{
 }
 a:visited {
     color: black;
-}
+}   
